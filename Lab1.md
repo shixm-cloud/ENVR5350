@@ -10,4 +10,4 @@ In this assgnment, we will explore simulation data (distributed in class) from t
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
 * _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit lowest concentration of CO<sub>2</sub>?_
-* _The data are from one of the Tier 1 experiments mentioned in Jones et al. 2016, can tell which one we are analyzing, `1pctCO2-gbc` or `esm-ssp585`? 
+* _The data are from one of the Tier 1 experiments mentioned in Jones et al. 2016, can tell which one we are analyzing, `1pctCO2-gbc` or `esm-ssp585`?_
