@@ -135,7 +135,7 @@ saveas(gcf, 'NPP_n_CO2_time_series.pdf')
 close   % close the previous figure
 scatter(co2gAve*1.0e6, nppgAveS, '.')
 grid on
-% since when CO2 concentration is 0, NPP should be 0, maybe we can fit the
+% Since when CO2 concentration is 0, NPP should be 0, maybe we can fit the
 % data with a simple equation NPP = b * CO2. Let's try.
 b = co2gAve*1.0e6 \ nppgAveS;    % the MATLAB way to do linear regression
 hold on    % so that the line can be overlaid on the scatter plot
