@@ -6,4 +6,6 @@ In this assgnment, we will explore simulation data (distributed in class) from t
 
 
 
-### Arithmetic
+### Problem 1 CO<sub>2</sub> variability
+
+
