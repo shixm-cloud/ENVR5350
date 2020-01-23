@@ -101,3 +101,7 @@ saveas(gcf, 'globalMeanTAS.pdf')
 ```
 Now with these plots, you should be able to answer the questions above.
 
+### Problem 2 Net Primary Productivity 
+
+In this task, you will explore the relationship between CO<sub>2</sub> concentration and Net Primary Prouductivity (NPP). After the analysis, you should answer the question below:
+* _Does NPP exhibit a linear inreasing trend as CO<sub>2</sub> concentration increases? Is its growth faster or slower than a linear function predicts?_
