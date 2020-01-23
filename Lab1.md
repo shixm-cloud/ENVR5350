@@ -6,7 +6,7 @@ In this assgnment, we will explore simulation data (distributed in class) from t
 
 
 
-### Problem 1 CO<sub>2</sub> variability and Temperature 
+### Problem 1  CO<sub>2</sub> variability and Temperature 
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
 * _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit lowest concentration of CO<sub>2</sub>?_
@@ -101,7 +101,49 @@ saveas(gcf, 'globalMeanTAS.pdf')
 ```
 Now with these plots, you should be able to answer the questions above.
 
-### Problem 2 Net Primary Productivity 
+### Problem 2  Net Primary Productivity 
 
 In this task, you will explore the relationship between CO<sub>2</sub> concentration and Net Primary Prouductivity (NPP). After the analysis, you should answer the question below:
 * _Does NPP exhibit a linear inreasing trend as CO<sub>2</sub> concentration increases? Is its growth faster or slower than a linear function predicts?_
+
+```
+%% Task 2: Net Primary Productivity
+
+% import NPP data
+npp = ncread('C4MIP/npp_Lmon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'npp');
+
+% calculate the global-areal-mean time series of NPP and plot it
+[FILL YOUR OWN CODE HERE, SAVE THE TIME SERIES AS 'nppgAve']
+
+xlabel('time (year)')
+ylabel('net primary productivity (kg m^{-2} s^{-1})')
+% Again, you will find the data is very noisy, so let's smooth it by taking the
+% one-year moving mean
+nppgAveS = movmean(nppgAve, 12);
+% Plot NPP and CO2 in the same figure
+yyaxis left
+plot(time, co2gAve*1.0e6);
+ylabel('CO2 concentration (ppm)')
+yyaxis right
+plot(time, nppgAveS)
+xlabel('time (year)')
+ylabel('net primary productivity (kg m^{-2} s^{-1})')
+saveas(gcf, 'NPP_n_CO2_time_series.pdf')
+
+% A better way to investigate their relationship would be using a scatter
+% plot
+close   % close the previous figure
+scatter(co2gAve*1.0e6, nppgAveS, '.')
+grid on
+% since when CO2 concentration is 0, NPP should be 0, maybe we can fit the
+% data with a simple equation NPP = b * CO2. Let's try.
+b = co2gAve*1.0e6 \ nppgAveS;    % the MATLAB way to do linear regression
+hold on    % so that the line can be overlaid on the scatter plot
+plot(co2gAve*1.0e6, b*co2gAve*1.0e6)
+xlabel('CO2 concentration (ppm)')
+ylabel('net primary productivity (kg m^{-2} s^{-1})')
+saveas(gcf, 'NPP_n_CO2_scatter.pdf')
+```
+Now with the plot, you should be able to answer this part.
+
+### Problem 3  Carbon Storage
