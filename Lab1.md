@@ -147,3 +147,46 @@ saveas(gcf, 'NPP_n_CO2_scatter.pdf')
 Now with the plot, you should be able to answer this part.
 
 ### Problem 3  Carbon Storage
+
+In this final task, you are asked to analyze the storage of carbon in vegetation. Follow the instructions in the code below to finish the analysis, and answer the question:
+* _How many times of vegetation mass do we need to plant (instead of relying on natural growth) by the end of this simulation in order to have the same fraction of carbon stored vegetation as at the begining?_
+
+```
+%% Task 3: Carbon Storage
+
+% Let's calculate the mass of carbon in the atmosphere first.
+% Assuming the global mean surface pressure is 1000 hPa, the number of
+% moles of molecules in a column is
+[FILL YOUR CODE HERE, SAVE THE RESULT AS 'nAtmos']
+
+% Hint: the molar mass of dry air is 29 g/mol. And
+% the unit of nAtmos is mol / m^2
+
+% So the number of moles of CO2 per m^2 is 
+% [Hint: You should use 'co2gAve' here, which has the unit mol/mol]
+[FILL YOUR CODE HERE, SAVE THE RESULT AS 'nco2']
+
+% The unit of nco2 is mol / m^2 of CO2
+
+% So the mass of carbon per m^2 in the atmosphere is 
+[FILL YOUR CODE HERE, SAVE THE RESULT AS 'mC']
+
+% The unit of mC is kg C / m^2
+
+% Import the data of carbon mass in vegetation 
+cVeg = ncread('C4MIP/cVeg_Lmon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'cVeg');
+% Calculate its global areal mean
+cVgAve = squeeze(sum(mean(wgt.*cVeg, 1), 2));
+   
+% Plot
+yyaxis left
+plot(time, cVgAve);
+ylim([0, 3.5]);
+ylabel('carbon mass in vegetation (kg m^{-2})')
+yyaxis right
+plot(time, mC)
+ylim([0, 3.5]);
+xlabel('time (year)')
+ylabel('carbon mass in atmosphere (kg m^{-2})')
+saveas(gcf, 'cVeg_time_series.pdf')
+```
