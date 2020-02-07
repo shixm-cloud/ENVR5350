@@ -6,7 +6,7 @@ In this assgnment, we will explore simulation data (distributed in class) from t
 
 
 
-### Problem 1.  CO<sub>2</sub> variability and Temperature 
+### Problem 1.  CO<sub>2</sub> Variability and Temperature 
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
 * _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit lowest concentration of CO<sub>2</sub>?_
