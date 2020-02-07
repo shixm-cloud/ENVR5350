@@ -16,3 +16,14 @@ Finish the code below and compare the plots of zonally averaged, time mean zonal
 
 Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\\(\overline{u}^* \\)and \\(\overline{v}^* \\)) on a longitude-latitude map. The second map zooms into the North Pacific sector and compare the patterns of 1900 and 2100. You can find over East Asia high laitudes northerly wind dominates. This is actually responsible for the harsh winter over East Asian. Answer the question below:
 * Based on the second map, do you think the winter in East Aisa will be harsher or milder (compared to other regions in the same latitudes) in the a warmed climate? 
+
+### Problem 3. Kinetic Energy
+
+In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer this question:
+* What component of the circulation (mean flow, stationary waves, or transient eddies) exhibit largest change? At what latitudes? 
+* Based on the eddy kinetic energy at 500 hPa, do you think the future weather in mid- and high-latitudes will be more stormy or less?
+
+
+
+
+
