@@ -8,3 +8,9 @@ The dataset provided are daily data of zonal wind (`ua`) and meridional wind (`v
 
 Finish the code below and compare the plots of zonally averaged, time mean zonal wind field for 1900 and 2100. You should plot the mean zonal wind in a latitude-height(pressure) coordinate. Answer the following questions:
 * At what pressure level do you see the _tropospheric_ jet streams?
+* Compare the figure for 1900 and that for 2100, do you see any change in the tropospheric jet streams?
+
+
+### Problem 2. Stationary Waves
+
+Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\(\overline{u}^*\) and \(\overline{v}^*\)) on a longitude-latitude map.
