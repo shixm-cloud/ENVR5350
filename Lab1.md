@@ -6,7 +6,7 @@ In this assgnment, we will explore simulation data (distributed in class) from t
 
 
 
-### Problem 1  CO<sub>2</sub> variability and Temperature 
+### Problem 1.  CO<sub>2</sub> variability and Temperature 
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
 * _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit lowest concentration of CO<sub>2</sub>?_
@@ -107,7 +107,7 @@ saveas(gcf, 'globalMeanTAS.pdf')
 ```
 Now with these plots, you should be able to answer the questions above.
 
-### Problem 2  Net Primary Productivity 
+### Problem 2.  Net Primary Productivity 
 
 In this task, you will explore the relationship between CO<sub>2</sub> concentration and Net Primary Prouductivity (NPP). After the analysis, you should answer the question below:
 * _Does NPP exhibit a linear inreasing trend as CO<sub>2</sub> concentration increases? Is its growth faster or slower than a linear function predicts?_
@@ -152,7 +152,7 @@ saveas(gcf, 'NPP_n_CO2_scatter.pdf')
 ```
 Now with the plot, you should be able to answer this part.
 
-### Problem 3  Carbon Storage
+### Problem 3.  Carbon Storage
 
 In this final task, you are asked to analyze the storage of carbon in vegetation. Follow the instructions in the code below to finish the analysis, and answer the question:
 * _How many times of vegetation mass do we need to plant (instead of relying on natural growth) by the end of this simulation in order to have the same fraction of carbon stored vegetation as at the begining?_
