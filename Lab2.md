@@ -6,5 +6,5 @@ The dataset provided are daily data of zonal wind (`ua`) and meridional wind (`v
 
 ### Problem 1. Zonal Mean, Time Mean Zonal Wind
 
-Finish the code below and compare the plots of zonally averaged, time mean zonal wind field for 1900 and 2100. Answer the following questions:
-* 
+Finish the code below and compare the plots of zonally averaged, time mean zonal wind field for 1900 and 2100. You should plot the mean zonal wind in a latitude-height(pressure) coordinate. Answer the following questions:
+* At what pressure level do you see the _tropospheric_ jet streams?
