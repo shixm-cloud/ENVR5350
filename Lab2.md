@@ -14,4 +14,5 @@ Finish the code below and compare the plots of zonally averaged, time mean zonal
 ### Problem 2. Stationary Waves
 {% include mathjax.html %}
 
-Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\\(\overline{u}^* \\) and \\(\overline{v}^* \\)) on a longitude-latitude map.
+Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\\(\overline{u}^*\\) and \\(\overline{v}^*\\)) on a longitude-latitude map. The second map zooms into the North Pacific sector and compare the patterns of 1900 and 2100. You can find over East Asia high laitudes northerly wind dominates. This is actually responsible for the harsh winter over East Asian. Answer the question below:
+* Based on the second map, do you think the winter in East Aisa will be harsher or milder (compared to other regions in the same latitudes) in the a warmed climate? 
