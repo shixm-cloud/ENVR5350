@@ -10,6 +10,60 @@ Finish the code below and compare the plots of zonally averaged, time mean zonal
 * At what pressure level do you see the _tropospheric_ jet streams?
 * Compare the figure for 1900 and that for 2100, do you see any change in the tropospheric jet streams?
 
+```
+%% Compute the Kinetic Energy of the Atmosphere 
+% The GFDL climate simulations of 1900 and 2100 (under SSP5) are compared.
+
+%% Load data
+ua19 = ncread('SSP585/ua_day_GFDL-CM4_historical_r1i1p1f1_gr2_19000101-19001231.nc', 'ua');
+va19 = ncread('SSP585/va_day_GFDL-CM4_historical_r1i1p1f1_gr2_19000101-19001231.nc', 'va');
+lat = ncread('SSP585/ua_day_GFDL-CM4_historical_r1i1p1f1_gr2_19000101-19001231.nc', 'lat');
+lon = ncread('SSP585/ua_day_GFDL-CM4_historical_r1i1p1f1_gr2_19000101-19001231.nc', 'lon');
+plev = ncread('SSP585/ua_day_GFDL-CM4_historical_r1i1p1f1_gr2_19000101-19001231.nc', 'plev');
+% plev' = [100000 85000 70000 50000 25000 10000 5000 1000]
+% we will look at 250hPa level later
+ua21 = ncread('SSP585/ua_day_GFDL-CM4_ssp585_r1i1p1f1_gr2_21000101-21001231.nc', 'ua');
+va21 = ncread('SSP585/va_day_GFDL-CM4_ssp585_r1i1p1f1_gr2_21000101-21001231.nc', 'va');
+
+%% Task 1: Examine the zonal mean, time mean zonal wind (u) field.
+% [REPLACE THE QUESTION MARKS WITH YOUR CODE; 
+%  HINT: USE the function 'nanmean' instead of 'mean']
+ubar19 = ?;
+vbar19 = ?;   % time mean 
+uavg19 = ?;
+vavg19 = ?;   % zonal mean
+
+ubar21 = ?;
+vbar21 = ?;   % time mean 
+uavg21 = ?;
+vavg21 = ?;   % zonal mean
+
+% plot uavg19 and uavg21
+f1 = figure;
+[Y, P] = meshgrid(lat, plev/100.0);
+levels = -12:3:36;
+contourf(Y, P, squeeze(uavg19)', levels, 'ShowText', 'on')
+caxis([-12 36]);
+set(gca, 'YScale', 'log')
+set(gca,'YDir','reverse')
+yticks([10 50 100 250 500 700 1000]);
+yticklabels({'10', '50','100','250','500','700','1000'})
+xlabel('latitude')
+ylabel('pressure (hPa)')
+title('Year 1900')
+f2 = figure;
+[Y, P] = meshgrid(lat, plev/100.0);
+levels = -12:3:36;
+contourf(Y, P, squeeze(uavg21)', levels, 'ShowText', 'on')
+caxis([-12 36]);
+set(gca, 'YScale', 'log')
+set(gca,'YDir','reverse')
+yticks([10 50 100 250 500 700 1000]);
+yticklabels({'10', '50','100','250','500','700','1000'})
+xlabel('latitude')
+ylabel('pressure (hPa)')
+title('Year 2100')
+```
 
 ### Problem 2. Stationary Waves
 {% include mathjax.html %}
