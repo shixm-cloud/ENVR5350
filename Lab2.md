@@ -14,4 +14,4 @@ Finish the code below and compare the plots of zonally averaged, time mean zonal
 ### Problem 2. Stationary Waves
 {% include mathjax.html %}
 
-Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\(\overline{u}^*\) and \(\overline{v}^*\)) on a longitude-latitude map.
+Complet the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\(\overline{u}^* \) and \(\overline{v}^* \)) on a longitude-latitude map.
