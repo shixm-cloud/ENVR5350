@@ -128,7 +128,8 @@ Please complete the code below and answer the question below. The way to perform
 
 * _What is the fractional sensitivity of latent heat on temperature based on your regression, that is, what is the approximate value of \\( \dfrac{1}{LE}\dfrac{\partial LE}{\partial T_s} \\)?_
 
-* **Bonus Question:** 
+* **Bonus Question:** _Can you try to explain why the sensitivity latent heat flux adopts the value from your regression?_ 
+\[Hint: You should think about the energy balance of the climte system. Figures on Page 26 of Lecture 3 are helpful for you to answer thsi question.\]
 
 
 
