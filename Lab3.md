@@ -86,6 +86,9 @@ legend('sensible', 'latent', 'Location', 'east')
 ```
 
 ### Problem 3. Understanding the Change
+{% include mathjax.html %}
+
+In our class, we showed that over water surfaces, we may calculate latent heat flux with the following expression,
 
 \\[
     LE \approx \rho L C_{\text{DE}} U_r\left(q^*(T_s)(1-\text{RH}) + \text{RH} B_e^{-1}\frac{c_p}{L}(T_s - T_a)  \right)
