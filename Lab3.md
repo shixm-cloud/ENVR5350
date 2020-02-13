@@ -94,8 +94,41 @@ In our class, we showed that over water surfaces, we may calculate latent heat f
     LE \approx \rho L C_{\text{DE}} U_r\left(q^*(T_s)(1-\text{RH}) + \text{RH} B_e^{-1}\frac{c_p}{L}(T_s - T_a)  \right)
 \\]
 
-* Please show that by assuming the exponential dependence on temperature of\\( q^* \\) dominate in this formula, it is approximately correct to state that 
+* _Please show that by assuming the exponential dependence on temperature of\\( q^* \\) dominate in this formula, it is approximately correct to state that_
 \\[
 LE \propto q^*
 \\]
+_So one can expect latent heat flux will increase by 7%/K under global warming, just like moisture will do._
+
+
+Now complete the code below to make a scatter plot of the annual mean, global mean latent heat flux and temperature. 
+
+* _Based on this figure, do you think the dependence of latent heat on temperature is linear or exponential?
+
+```
+%% Task 3: understanding the change in latent heat flux
+% compute annual mean values of globally averaged LE and temperature, save to LEa and Tsa
+[FILL YOUR CODE HERE]
+
+f4 = figure;
+scatter(Tsa, LEa, 25, Tsa, 'filled');
+xlabel('surface temperature ({\circ}C)')
+ylabel('latent heat flux (W m^{-2})')
+```
+
+Lastly, based on your guess, perform a simple regression for `LEa` and `Tsa`. If you think they have exponential relationship, the regression equation should be
+\\[
+\log LE = \beta_0 + \beta_1 T_s
+\\]
+If you think they have a linear relationship, the equation is
+\\[
+LE = \beta_0 + \beta_1 T_s
+\\]
+Please complete the code below and answer the question,
+* _What is the fractional sensitivity of latent heat on temperature based on your regression, that is, what is the approximate value of \\( \frac{1}{LE}\frac{\partial LE}{\partial T_s} \\)?_
+
+
+
+
+
 
