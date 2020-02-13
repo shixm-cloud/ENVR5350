@@ -103,7 +103,7 @@ _So one can expect latent heat flux will increase by 7%/K under global warming, 
 
 Now complete the code below to make a scatter plot of the annual mean, global mean latent heat flux and temperature. 
 
-* _Based on this figure, do you think the dependence of latent heat on temperature is linear or exponential?
+* _Based on this figure, do you think the dependence of latent heat on temperature is linear or exponential?_
 
 ```
 %% Task 3: understanding the change in latent heat flux
