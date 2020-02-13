@@ -93,3 +93,9 @@ In our class, we showed that over water surfaces, we may calculate latent heat f
 \\[
     LE \approx \rho L C_{\text{DE}} U_r\left(q^*(T_s)(1-\text{RH}) + \text{RH} B_e^{-1}\frac{c_p}{L}(T_s - T_a)  \right)
 \\]
+
+* Please show that by assuming the exponential dependence on temperature of\\( q^* \\) dominate in this formula, it is approximately correct to state that 
+\\[
+LE \propto q^*
+\\]
+
