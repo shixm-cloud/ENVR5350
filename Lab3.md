@@ -22,8 +22,8 @@ lon = ncread('CESM/ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'lon');
 %  between 2015/01 to 2019/12 first.
 
 % Compute the time mean LE and SH, save to LE15 and SH15
-LE15 = mean(LE(:,:,1:60), 3);
-SH15 = mean(SH(:,:,1:60), 3);
+LE15 = [FILL YOUR CODE HERE];
+SH15 = [FILL YOUR CODE HERE];
 
 %% Show the sensible heat on a map
 [LON, LAT] = meshgrid(lon, lat);
@@ -56,4 +56,31 @@ title('Latent Heat Flux (W m^{-2})')
 hold on
 load coastlines
 plotm(coastlat,coastlon)
+```
+
+### Problem 2. Trend in Fluxes
+
+In this part, please complete the code to calculate the global mean, monthly mean surface sensible and latent heat fluxes, and plot the time series to what they are predited to change under SSP5-8.5 (shared socio-economic pathway). Answer this question
+* _According to this CESM simulation, do you think the globally averaged sensible heat flux and latent heat flux will increase or decrease due to global warming?_
+
+```
+%% Task 2: changes under global warming
+%  Now let's plot the time series of globa mean monthly sensible and latent
+%  heat fluxes.
+
+% Compute time series, save to LEs and SHs
+% remember to weight data with cos latitude
+[FILL YOUR CODE HERE]
+LEs = [FILL YOUR CODE HERE];
+SHs = [FILL YOUR CODE HERE];
+time = linspace(2015, 2100+11/12, numel(LEs));
+
+% Plot the the two time series
+f3 = figure;
+plot(time, SHs, 'r-', time, LEs, 'b-')
+ylim([0 105]);
+xlim([2015, 2100])
+xlabel('year')
+ylabel('flux (W m^{-2})')
+legend('sensible', 'latent', 'Location', 'east')
 ```
