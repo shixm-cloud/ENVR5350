@@ -124,9 +124,11 @@ If you think they have a linear relationship, the equation is
 \\[
 LE = \beta_0 + \beta_1 T_s
 \\]
-Please complete the code below and answer the question,
-* _What is the fractional sensitivity of latent heat on temperature based on your regression, that is, what is the approximate value of \\( \frac{1}{LE}\frac{\partial LE}{\partial T_s} \\)?_
+Please complete the code below and answer the question below. The way to perform a simple linear regression is fairly straigtforward, please read this page for details: [https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html](https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html)
 
+* _What is the fractional sensitivity of latent heat on temperature based on your regression, that is, what is the approximate value of \\( \dfrac{1}{LE}\dfrac{\partial LE}{\partial T_s} \\)?_
+
+* **Bonus Question:** 
 
 
 
