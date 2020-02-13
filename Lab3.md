@@ -84,3 +84,9 @@ xlabel('year')
 ylabel('flux (W m^{-2})')
 legend('sensible', 'latent', 'Location', 'east')
 ```
+
+### Problem 3. Understanding the Change
+
+\\[
+    LE \approx \rho L C_{\text{DE}} U_r\left(q^*(T_s)(1-\text{RH}) + \text{RH} B_e^{-1}\frac{c_p}{L}(T_s - T_a)  \right)
+\\]
