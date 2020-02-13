@@ -140,7 +140,9 @@ b = [FILL YOUR CODE HERE];
 LEaCalc = X*b;
 hold on
 plot(Tsa, LEaCalc, 'k-')
-fprintf('Regression slope: %5.2f W/m^2/K \n', b(2))
+hold off
+
+fprintf('Regression slope: %5.2f W/m^2/K \n\n', b(2))
 ```
 
 
