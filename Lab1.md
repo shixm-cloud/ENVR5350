@@ -172,12 +172,11 @@ nAtmos = 100000 / 9.8   ...  % kg / m^2
 % So the number of moles of CO2 per m^2 is 
 % [Hint: You should use 'co2gAve' here, which has the unit mol/mol]
 [FILL YOUR CODE HERE, SAVE THE RESULT AS 'nco2']
-
 % The unit of nco2 is mol / m^2 of CO2
 
 % So the mass of carbon per m^2 in the atmosphere is 
+% [Hint: molar mass of 1 carbon atom is 12 g/mol (0.012 kg/mol)]
 [FILL YOUR CODE HERE, SAVE THE RESULT AS 'mC']
-
 % The unit of mC is kg C / m^2
 
 % Import the data of carbon mass in vegetation 
