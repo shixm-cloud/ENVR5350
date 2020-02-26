@@ -162,7 +162,9 @@ In this final task, you are asked to analyze the storage of carbon in vegetation
 % Let's calculate the mass of carbon in the atmosphere first.
 % Assuming the global mean surface pressure is 1000 hPa, the number of
 % moles of molecules in a column is
-[FILL YOUR CODE HERE, SAVE THE RESULT AS 'nAtmos']
+nAtmos = 100000 / 9.8   ...  % kg / m^2
+         * 1000 / 29.0;      % 29 g/mol is the molar mass of air
+% The unit of nAtmos is mol / m^2
 
 % Hint: the molar mass of dry air is 29 g/mol. And
 % the unit of nAtmos is mol / m^2
