@@ -163,7 +163,7 @@ Now with the plot, you should be able to answer this part.
 ### Problem 3.  Carbon Storage
 
 In this final task, you are asked to analyze the storage of carbon in vegetation. Follow the instructions in the code below to finish the analysis, and answer the question:
-* _How many times of vegetation mass do we need to plant (instead of relying on natural growth) by the end of this simulation in order to have the same fraction of carbon stored vegetation as at the beginning?_
+* _How many times of vegetation mass do we need to plant (instead of relying on natural growth) by the end of this simulation in order to have the same fraction of carbon stored in vegetation as at the beginning?_
 
 ```
 %% Task 3: Carbon Storage
