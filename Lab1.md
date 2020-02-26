@@ -58,6 +58,7 @@ co2win = squeeze(mean(co2winters, 4));   % average in time
 lat = ncread('C4MIP/co2_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'lat');
 
 % Plot mean CO2 distribution for the four seasons
+f1 = figure;
 plot(lat, co2win*1.0e6, lat, co2spr*1.0e6, lat, co2sum*1.0e6, lat, co2fal*1.0e6)
 legend('DJF', 'MAM', 'JJA', 'SON')
 xlim([-90, 90])
@@ -81,6 +82,7 @@ wgt = reshape(wgt/sum(wgt), 1, 180, 1, 1);
 co2gAve = squeeze(sum(mean(wgt.*co2m, 1), 2));
 
 % Plot the time series
+f2 = figure;
 time = (1:1200)/12.0;   % years
 plot(time, co2gAve*1.0e6)
 xlabel('time (year)')
@@ -93,11 +95,16 @@ tas = ncread('C4MIP/tas_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'tas');
 % Compute its global area average
 wgt = reshape(wgt, 1, 180, 1);   % wgt needs reshaping because tas is a 3D array 
 % Calculate the global areal mean temperature
-[FILL YOUR OWN CODE HERE, SAVE AS 'tasgAve'; PLOT THE TIME SERIES]
+[FILL YOUR OWN CODE HERE, SAVE AS 'tasgAve']
+
+f3 = figure;
+[FILL YOUR CODE HERE TO PLOT THE TIME SERIES]
+
 
 % This plot is kind of too noisy, let's smooth the time series by taking
 % the one-year moving average of the data
 tasgAveS = movmean(tasgAve, 12);
+f4 = figure;
 plot(time, tasgAveS)
 xlabel('time (year)')
 ylabel('near-surface air temperature (K)')
@@ -117,6 +124,7 @@ In this task, you will explore the relationship between CO<sub>2</sub> concentra
 % import NPP data
 npp = ncread('C4MIP/npp_Lmon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'npp');
 
+f5 = figure;
 % calculate the global-areal-mean time series of NPP and plot it
 [FILL YOUR OWN CODE HERE, SAVE THE TIME SERIES AS 'nppgAve']
 
@@ -126,6 +134,7 @@ ylabel('net primary productivity (kg m^{-2} s^{-1})')
 % one-year moving mean
 nppgAveS = movmean(nppgAve, 12);
 % Plot NPP and CO2 in the same figure
+f6 = figure;
 yyaxis left
 plot(time, co2gAve*1.0e6);
 ylabel('CO2 concentration (ppm)')
@@ -137,7 +146,7 @@ saveas(gcf, 'NPP_n_CO2_time_series.pdf')
 
 % A better way to investigate their relationship would be using a scatter
 % plot
-close   % close the previous figure
+f7 = figure;
 scatter(co2gAve*1.0e6, nppgAveS, '.')
 grid on
 % Since when CO2 concentration is 0, NPP should be 0, maybe we can fit the
@@ -185,6 +194,7 @@ cVeg = ncread('C4MIP/cVeg_Lmon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'cVeg')
 cVgAve = squeeze(sum(mean(wgt.*cVeg, 1), 2));
    
 % Plot
+f8 = figure;
 yyaxis left
 plot(time, cVgAve);
 ylim([0, 3.5]);
