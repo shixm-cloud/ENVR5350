@@ -54,3 +54,64 @@ legend('1897-1899', '2097-2099')
 
 fprintf('If we use the historical climate profile, error in APE is: %5.1f %%\n', err)
 ```
+
+### Problem 2. The Change in APE
+
+Complete the code below to plot time series of APE in the historical period and future period. Answer the following questions.
+* _Which seasons have the lowest and highest APE?_
+* _Do you see significant increase or decrease in APE due to global warming? What physical process do you think causes such a change?_ 
+[Hint: Think about how APE is generated to answer the second question]
+
+```
+%% Task 2: Compuate available potential energy
+% get half level mean temperature and perturbation (T'') of the lowest 4 levels
+ta18mh = 0.5 * (ta18m(:, :, 1:4) + ta18m(:, :, 2:5));
+ta20mh = 0.5 * (ta20m(:, :, 1:4) + ta20m(:, :, 2:5));
+[FILL YOUR CODE HERE, SAVE THE PERTURBATION COMPONENTS TO 'ta18p' and 'ta20p']
+
+
+Gamma1820 = 0.5 * (Gamma18 + Gamma20);   
+% use this mean lapse rate profile for calculation
+
+% compute APE at each grid cell, do not average/sum yet
+[FILL YOUR CODE HERE, SAVE THE RESULTS TO 'ape18h' and 'ape20h']
+
+
+% set the latitude weight
+clat = reshape(cosd(lat), 1, 96);  % weight data by cos(lat)
+clat = repmat(clat, 1, 1, 4);      % make clat the same shape as ta18mh and ta20mh
+% Average over longitude
+ape18m = nanmean(ape18h, 1);  
+ape20m = nanmean(ape20h, 1);
+
+clat(isnan(ape18m(:,:,:,1))) = NaN;   % set weight for points underground as NaN
+% Average over latitude
+ape18m = nansum(clat.*ape18m, 2) ./ nansum(clat, 2);
+ape20m = nansum(clat.*ape20m, 2) ./ nansum(clat, 2);
+% Integrate in the vertical
+dp = reshape(plev(1:4) - plev(2:5), 1, 1, 4);
+ape18 = sum(ape18m .* dp, 3); 
+ape20 = sum(ape20m .* dp, 3);
+% Remove singleton dimensions 
+ape18 = squeeze(ape18);
+ape20 = squeeze(ape20);
+
+% Plot the time series of APE
+time = (1:length(ape18))' / (365.0/12.0) + 1;
+f2 = figure;
+plot(time, ape18, 'b-', time, ape20, 'r-')
+ylabel('APE (J m^{-2})')
+xlabel('time (month)')
+legend('1897-1899', '2097-2099')
+xlim([1, 37])
+% Let's filter sub-monthly variability by taking the moving average
+ape18 = movmean(ape18, 30);
+ape20 = movmean(ape20, 30);
+f3 = figure;
+plot(time, ape18, 'b-', time, ape20, 'r-')
+ylabel('APE (J m^{-2})')
+xlabel('time (month)')
+legend('1897-1899', '2097-2099')
+xlim([1, 37])
+```
+
