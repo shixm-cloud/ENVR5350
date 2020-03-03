@@ -6,7 +6,8 @@ In this exercise, we will look at how avaiable potential energy (APE) resonds to
 
 Two Southern Hemisphere temperature datasets are provided. One is `historical` simulation for 1897 to 1899, and the other is the simulation of 2097-2099 under the SSP5-8.5 scenario. Please complete the code below and answer the following question,
 * _Do you think the mean lapse rate for the warmed climate and the current climate are significantly different? How large error (in terms of percentage) may be introduced by using the mean lapse rate profile for 1897-1899 in estimating the APE of 2097-2099?_
-\[_Hint: you can certainly do detailed calculation to find out the error. However, here I wish you to estimate the relative error by comparing the two lapse rate profile and using the definition of APE (Equation 18 on class slides)_\]
+\[Hint: you can certainly do detailed calculation to find out the error. However, here I wish you to estimate the relative error by comparing the two lapse rate profile and using the definition of APE (Equation 18 on class slides) \]
+
 ```
 %% Southern Hemisphere Available Potential Energy
 %% Task 1: Compute mean lapse rate in historical and future climate
