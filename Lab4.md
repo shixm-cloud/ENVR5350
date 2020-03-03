@@ -60,7 +60,7 @@ fprintf('If we use the historical climate profile, error in APE is: %5.1f %%\n',
 Complete the code below to plot time series of APE in the historical period and future period. Answer the following questions.
 * _Which seasons have the lowest and highest APE?_
 * _Do you see significant increase or decrease in APE due to global warming? What physical process do you think causes such a change?_ 
-[Hint: Think about how APE is generated to answer the second question]
+[Hint: Think about how APE is generated to answer this question]
 
 ```
 %% Task 2: Compuate available potential energy
