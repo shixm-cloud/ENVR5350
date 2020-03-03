@@ -14,19 +14,17 @@ Two Southern Hemisphere temperature datasets are provided. One is `historical` s
 ta18 = ncread('ta_day_CESM2_historical_r11i1p1f1_gn_18970101-18991231_SH.nc', 'ta');
 ta20 = ncread('ta_day_CESM2_ssp585_r1i1p1f1_gn_20970101-209912301_SH.nc', 'ta');
 
-% Calculate mean lapse rate. Lapse rate in fact is not a function of pressure only, but here let's assume it is here
+% Calculate mean lapse rate. Lapse rate in fact is not a function of pressure only, but here let's assume it is.
 lat = ncread('ta_day_CESM2_historical_r11i1p1f1_gn_18970101-18991231_SH.nc', 'lat');
 clat = reshape(cosd(lat), 1, 96);  % weight data by cos(lat)
 clat = repmat(clat, 1, 1, 8);  % make clat the same shape as ta18m and ta20m below
 
 % Average over longitude and time
-ta18m = nanmean(ta18, [1, 4]);  
-ta20m = nanmean(ta20, [1, 4]);
+[FILL YOUR CODE HERE, SAVE TO 'ta18m' AND 'ta20m']
 
 % Average over latitude
 clat(isnan(ta18m)) = NaN;   % set weight for points underground as NaN
-ta18m = nansum(clat.*ta18m, 2) ./ nansum(clat, 2);
-ta20m = nansum(clat.*ta20m, 2) ./ nansum(clat, 2);
+[FILL YOUR CODE HERE, SAVE TO 'ta18m' AND 'ta20m']
 
 % Find out height of each layer 
 plev = ncread('ta_day_CESM2_historical_r11i1p1f1_gn_18970101-18991231_SH.nc', 'plev');
@@ -35,10 +33,10 @@ plev = ncread('ta_day_CESM2_historical_r11i1p1f1_gn_18970101-18991231_SH.nc', 'p
 zlev = 7600.0 * log(100000.0 ./ plev);
 zlev = reshape(zlev, size(ta18m));  % reshape it for later convenience in broadcasting
 
-% Calculate mean lapse rate now
-Gamma18 = -(ta18m(2:8) - ta18m(1:7)) ./ (zlev(2:8) - zlev(1:7));
-Gamma20 = -(ta20m(2:8) - ta20m(1:7)) ./ (zlev(2:8) - zlev(1:7));
-zhalf = 0.5 * (zlev(1:7) + zlev(2:8));
+% Calculate mean lapse rate now, using the difference between adjacent levels to approximate
+[FILL YOUR CODE HERE]
+
+zhalf = 0.5 * (zlev(1:7) + zlev(2:8));  % height at half levels
 
 % Plot the lapse rate
 f1 = figure;
@@ -52,8 +50,7 @@ legend('1897-1899', '2097-2099')
 
 % Estimate overestimation/underestimation that may be introduce by using the mean lapse
 % rate of one climate for both.
-G18m = mean(9.8e-3 - Gamma18(1:4));
-G20m = mean(9.8e-3 - Gamma20(1:4));
-err = (G18m/G20m - 1.0) * 100.0;   % percentage 
-fprintf('If we use the historical climate profile, error in APE is: %5.1f \%', err)
+[FILL YOUR CODE HERE, SAVE RELATIVE ERROR ESTIMATION TO 'err']
+
+fprintf('If we use the historical climate profile, error in APE is: %5.1f %%\n', err)
 ```
