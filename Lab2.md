@@ -6,7 +6,7 @@ In this exercise we will examine the sensible and latent heat flux in a simulati
 
 Please complete the code below and answer the questions below.
 * _Over Australia, is the mean sensible flux stronger or the mean latent heat flux? On an annual mean and spatial basis, do you think the Bowen ratio over Australia is greater or smaller than 1?_
-* _In northern midlatitude oceans, where do you see strongest sensible and latent heat flux? Do you think the fluxes in those regions are stronger in winter or summar?_
+* _In northern midlatitude oceans, where do you see strongest sensible and latent heat flux? Do you think the fluxes in those regions are stronger in winter or summer?_
 
 ```
 %% Surface Fluxes
