@@ -11,11 +11,11 @@ Please complete the code below and answer the questions below.
 ```
 %% Surface Fluxes
 %% Load data
-LE = ncread('CESM/hfls_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'hfls');  % latent heat flux
-SH = ncread('CESM/hfss_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'hfss');  % sensible heat flux
-Ts = ncread('CESM/ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'ts');  % surface temperature
-lat = ncread('CESM/ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'lat');
-lon = ncread('CESM/ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'lon');
+LE = ncread('hfls_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'hfls');  % latent heat flux
+SH = ncread('hfss_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'hfss');  % sensible heat flux
+Ts = ncread('ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'ts');  % surface temperature
+lat = ncread('ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'lat');
+lon = ncread('ts_Amon_CESM2_ssp585_r1i1p1f1_gn_201501-210012.nc', 'lon');
 
 %% Task 1: Global Distribution of the latent and sensible heat fluxes
 %  We have 86 year data in total, but let's exmine the global distribution 
