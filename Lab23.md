@@ -1,4 +1,4 @@
-## 2. Kinetic Energy
+## 3. Kinetic Energy
 
 In this exercise, you will compute and compare the kinetic energy in the mean flow, stationary waves, and transient eddies. You will also look at the impact of global warming on the circulation.
 
