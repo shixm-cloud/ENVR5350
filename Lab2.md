@@ -70,9 +70,10 @@ In this part, please complete the code to calculate the monthly global-mean surf
 
 % Compute time series, save to LEs and SHs
 % remember to weight data with cos latitude
-[FILL YOUR CODE HERE]
-LEs = [FILL YOUR CODE HERE];
-SHs = [FILL YOUR CODE HERE];
+wgt = reshape(cosd(lat), 1, 192);
+wgt = wgt / sum(wgt);
+LEs = squeeze(mean(sum(LE.*wgt, 2), 1));
+SHs = squeeze(mean(sum(SH.*wgt, 2), 1));
 time = linspace(2015, 2100+11/12, numel(LEs));
 
 % Plot the the two time series
