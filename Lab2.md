@@ -1,4 +1,4 @@
-## 3. Surface Fluxes
+## 2. Surface Fluxes
 
 In this exercise we will examine the sensible and latent heat flux in a simulation using the Commumunity Earth System Model (CESM)
 
