@@ -61,7 +61,7 @@ plotm(coastlat,coastlon)
 ### Problem 2. Trend in Fluxes
 
 In this part, please complete the code to calculate the monthly global-mean surface sensible and latent heat fluxes, and plot the time series to show how they are predicted to change under SSP5-8.5 (shared socio-economic pathway) scenario. Answer this question
-* _According to this CESM simulation, do you think the globally averaged sensible heat flux and latent heat flux will increase or decrease due to global warming?_
+* _According to this CESM simulation, do you think the globally averaged sensible heat flux and latent heat flux will increase or decrease due to global warming? Which one changes faster?_
 
 ```
 %% Task 2: changes under global warming
