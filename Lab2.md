@@ -95,7 +95,7 @@ In our class, we showed that over water surfaces, we may calculate latent heat f
     LE \approx \rho L C_{\text{DE}} U_r\left(q^*(T_s)(1-\text{RH}) + \text{RH} B_e^{-1}\frac{c_p}{L}(T_s - T_a)  \right)
 \\]
 
-* _Please show that by assuming the exponential dependence on temperature of\\( q^* \\) dominate in this formula, it is **approximately** correct to state that_
+* _Please show that by assuming the exponential dependence on temperature of \\( q^* \\) dominate in this formula, it is **approximately** correct to state that_
 \\[
 LE \propto q^*
 \\]
@@ -125,11 +125,11 @@ If you think they have a linear relationship, the equation is
 \\[
 LE = \beta_0 + \beta_1 T_s
 \\]
-Please complete the code below and answer the question below. The way to perform a simple linear regression is fairly straigtforward, please read this page for details: [https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html](https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html)
+Please complete the code below and answer the question below. The way to perform a simple linear regression is fairly straightforward, please read this page for details: [https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html](https://www.mathworks.com/help/matlab/data_analysis/linear-regression.html)
 
 * _What is the fractional sensitivity of latent heat on temperature based on your regression, that is, what is the approximate value of \\( \dfrac{1}{LE}\dfrac{\partial LE}{\partial T_s} \\)?_
 
-* **Bonus Question:** _Can you try explaining why the sensitivity latent heat flux adopts the value from your regression?_  \[Hint: You should think about the energy balance of the climte system. Figures on Page 40 and 42 of Lecture 3 are helpful for you to answer thsi question.\]
+* **Bonus Question:** _Can you try explaining why the sensitivity latent heat flux adopts the value from your regression?_  \[Hint: You should think about the energy balance of the climate system. Figures on Page 40 and 42 of Lecture 3 are helpful for you to answer this question.\]
 
 ```
 % linear regression
