@@ -123,8 +123,8 @@ MKE21 = 0.5 * (uavg21.^2 + vavg21.^2);
 SKE19 = nanmean(0.5 * (ustar19.^2 + vstar19.^2), 1);  % stationary wave energy
 SKE21 = nanmean(0.5 * (ustar21.^2 + vstar21.^2), 1);
 
-EKE19 = nanmean(0.5 * (uprm19.^2 + uprm19.^2), [1, 4]);  % eddy kinetic energy
-EKE21 = nanmean(0.5 * (uprm21.^2 + uprm21.^2), [1, 4]);  % 
+EKE19 = nanmean(0.5 * (uprm19.^2 + vprm19.^2), [1, 4]);  % eddy kinetic energy
+EKE21 = nanmean(0.5 * (uprm21.^2 + vprm21.^2), [1, 4]);  % 
 
 % let's plot the 250hPa level energy distribution
 f5 = figure;
