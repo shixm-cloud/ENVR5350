@@ -103,7 +103,7 @@ hold off
 
 ### Problem 3. Kinetic Energy
 
-In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer these question:
+In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer these questions:
 * What component of the circulation (mean flow, stationary waves, or transient eddies) exhibit largest change? At what latitudes? 
 * Based on the eddy kinetic energy at 500 hPa, do you think the future weather in mid- and high-latitudes will be more stormy or less?
 
