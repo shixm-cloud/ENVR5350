@@ -1,6 +1,6 @@
 ## 4. Available Potential Energy
 
-In this exercise, we will look at how avaiable potential energy (APE) resonds to global warming by examining simulations using the Commumunity Earth System Model (CESM). 
+In this exercise, we will look at how available potential energy (APE) responds to global warming by examining simulations using the Community Earth System Model (CESM). 
 
 ### Problem 1. Mean Lapse Rate
 
