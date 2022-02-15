@@ -1,4 +1,4 @@
-## MATLAB Basics
+## MATLAB for Starters
 
 This page helps you to learn some basics about MATLAB.
 
