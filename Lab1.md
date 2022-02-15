@@ -21,7 +21,7 @@ First, let's explore the spatial and temporal variability of the data of CO<sub>
 % Because 1000-hPa data is missing for some places, let's use 500hPa data
 % co2m = co2(:,:,6,:);
 % In case the co2 file is too big for your computer, load the co2m directly
-% by uncomment the one of the two options below.
+% by uncommenting the one of the two options below.
 
 % Option 1:
 % load C4MIP/co2at500hPa.mat
@@ -45,13 +45,13 @@ co2winters = (co2me(1, :, 1, 12:12:end) + ...    % December
               co2me(1, :, 1,  2:12:end)) / 3.0;  % Feburary
 co2win = squeeze(mean(co2winters, 4));   % average in time
 
-% Spring (MAM) mean
+% Spring (March, Aprial, May) mean
 [FILL YOUR OWN CODE HERE, SAVE AS 'co2spr']
 
-% Summer (JJA) mean
+% Summer (June, July, August) mean
 [FILL YOUR OWN CODE HERE, SAVE AS 'co2sum']
          
-% Fall (SON) mean
+% Fall (September, October, November) mean
 [FILL YOUR OWN CODE HERE, SAVE AS 'co2fal']
 
 % Import latitude data
@@ -75,7 +75,7 @@ saveas(gcf, 'seasonalMeanCO2.pdf')
 % Creat area weights first because the grid area decreases with latitude
 wgt = cosd(lat);
 wgt = reshape(wgt/sum(wgt), 1, 180, 1, 1);   
-% normalize wgt so that its sum is 1 
+% normalize wgt so that its sum is 1, and
 % reshape wgt so that it can be multiplied to co2m directly
 
 % Calculate the global areal mean
@@ -95,7 +95,7 @@ tas = ncread('C4MIP/tas_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'tas');
 % Compute its global area average
 wgt = reshape(wgt, 1, 180, 1);   % wgt needs reshaping because tas is a 3D array 
 % Calculate the global areal mean temperature
-[FILL YOUR OWN CODE HERE, SAVE AS 'tasgAve']
+[FILL YOUR OWN CODE HERE, SAVE CALCULATION RESULT AS 'tasgAve']
 
 f3 = figure;
 [FILL YOUR CODE HERE TO PLOT THE TIME SERIES]
