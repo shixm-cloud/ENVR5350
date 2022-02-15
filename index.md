@@ -6,8 +6,4 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 
 ### 1. [Carbon Cycle](Lab1.md)
 
-### 2. [Surface Fluxes](Lab2.md)
 
-### 3. [Kinetic Energy](Lab3.md)
-
-### 4. [Available Potential Energy](Lab4.md)
