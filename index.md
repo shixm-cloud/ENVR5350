@@ -8,4 +8,4 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 
 
 
-### * [MATLAB for Starters](MATLAB_Stater.md)
+### * [MATLAB for Starters](MATLAB_Starter.md)
