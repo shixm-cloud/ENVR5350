@@ -14,19 +14,16 @@ First, let's explore the spatial and temporal variability of the data of CO<sub>
 ```
 %% Task 1: CO2 variability and temperature
 
-% Import CO2 data; This dataset is a bit large, so you are recommended to use option 1 or 2 below.
+% Import CO2 data; The original dataset is a bit large, so you actually will use the quick option below.
 % co2 = ncread('C4MIP/co2_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'co2');
 % Import pressure level information; You'll find the 6th level is 500hPa
 % plev = ncread('C4MIP/co2_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'plev');
 % Because 1000-hPa data is missing for some places, let's use 500hPa data
 % co2m = co2(:,:,6,:);
-% In case the co2 file is too big for your computer, load the co2m directly
-% by uncommenting the one of the two options below.
+% This co2 array is too big for your computer, load the co2m directly
+% by the "quick option" below.
 
-% Option 1:
-% load C4MIP/co2at500hPa.mat
-
-% Option 2:
+% Quick Option:
 co2m = ncread('C4MIP/co2m_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'co2m');
 co2m = reshape(co2m, 288, 180, 1, 1200);   % to make it compatible with code below
 
