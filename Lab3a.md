@@ -73,6 +73,13 @@ In this part, you need to complete the code below to compute the kinetic energy 
 
 ```
 %% Task 2: Compute kinetic energy of mean flow, stationary waves, and transient eddies
+
+% stationary wave
+ustar19 = ubar19 - uavg19;
+vstar19 = vbar19 - vavg19;
+ustar21 = ubar21 - uavg21;
+vstar21 = vbar21 - vavg21;
+
 % compute transient eddy component
 % [REPLACE THE QUESTION MARKS WITH YOUR CODE]
 uprm19 = ?;
