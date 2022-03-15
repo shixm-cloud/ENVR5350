@@ -1,4 +1,4 @@
-## 1. Carbon Cycle
+## Problem Set 1. Carbon Cycle
 
 In this assgnment, we will explore simulation data (distributed in class) from the C4MIP. You are requited to look at the following paper to understand the background of the data.
 
