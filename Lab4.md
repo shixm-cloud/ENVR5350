@@ -1,4 +1,4 @@
-## 4. Available Potential Energy
+## Problem Set 3B. Available Potential Energy
 
 In this exercise, we will look at how available potential energy (APE) responds to global warming by examining simulations using the Community Earth System Model (CESM). 
 
