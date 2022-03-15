@@ -8,9 +8,9 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 
 ### 2. [Surface Fluxes](Lab2.md)
 
-### 3A. [Kinetic Energy](Lab3.md)
+### 3A. [Kinetic Energy](Lab3a.md)
 
-### 3B. [Available Potential Energy](Lab4.md)
+### 3B. [Available Potential Energy](Lab3b.md)
 
 ### * [MATLAB for Starters](MATLAB_Starter.md)
 
