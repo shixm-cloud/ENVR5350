@@ -1,4 +1,4 @@
-## 3. Kinetic Energy
+## 3A. Kinetic Energy
 
 In this exercise, you will compute and compare the kinetic energy in the mean flow, stationary waves, and transient eddies. You will also look at the impact of global warming on the circulation.
 
@@ -65,50 +65,14 @@ ylabel('pressure (hPa)')
 title('Year 2100')
 ```
 
-### Problem 2. Stationary Waves
-{% include mathjax.html %}
-
-Complete the code below so that you can obtain maps of stationary waves. You are supposed to plot the 250hPa stationary wave wind vectors (\\(\overline{u}^* \\)and \\(\overline{v}^* \\)) on a longitude-latitude map. The second map zooms into the North Pacific sector and compare the patterns of 1900 and 2100. You can find over East Asia high latitudes northerly wind dominates. This is actually responsible for the harsh winter over East Asian. Answer the question below:
-* Based on the second map, do you think the winter in East Asia will be harsher or milder (compared to other regions in the same latitudes) in the a warmed climate? 
-
-```
-%% Task2: Examine stationary waves
-% stationary wave
-% [REPLACE THE QUESTION MARKS WITH YOUR CODE]
-ustar19 = ?;
-vstar19 = ?;
-ustar21 = ?;
-vstar21 = ?;
-
-% plot the stationary waves
-[X, Y] = meshgrid(lon(1:2:end), lat(1:2:end));
-f3 = figure;
-axesm ('eqdcylin','Grid', 'on', 'Origin', [0 180]);
-geoshow('landareas.shp')
-q1 = quiverm(Y, X, (vstar19(1:2:end,1:2:end,5))', (ustar19(1:2:end,1:2:end,5))');
-set(q1, 'ColorMode', 'manual', 'Color', 'b');
-title('Stationary Eddies')
-
-f4 = figure;  % overlay two stationary eddy fields
-axesm ('eqdcylin','Grid', 'on', 'Origin', [0 180], 'MapLatLimit', [0 70], 'MapLonLimit', [80 270]);
-geoshow('landareas.shp')
-q1 = quiverm(Y, X, (vstar19(1:2:end,1:2:end,5))', (ustar19(1:2:end,1:2:end,5))');
-set(q1, 'ColorMode', 'manual', 'Color', 'b');
-hold on 
-q2 = quiverm(Y, X, (vstar21(1:2:end,1:2:end,5))', (ustar21(1:2:end,1:2:end,5))');
-set(q2, 'ColorMode', 'manual', 'Color', 'r');
-title('Stationary Eddies for 1900 (blue) and 2100 (red)')
-hold off
-```
-
-### Problem 3. Kinetic Energy
+### Problem 2. Kinetic Energy
 
 In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer these questions:
 * What component of the circulation (mean flow, stationary waves, or transient eddies) exhibit largest change? At what latitudes? 
 * Based on the eddy kinetic energy at 500 hPa, do you think the future weather in mid- and high-latitudes will be more stormy or less?
 
 ```
-%% Task 3: Compute kinetic energy of mean flow, stationary waves, and transient eddies
+%% Task 2: Compute kinetic energy of mean flow, stationary waves, and transient eddies
 % compute transient eddy component
 % [REPLACE THE QUESTION MARKS WITH YOUR CODE]
 uprm19 = ?;
