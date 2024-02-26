@@ -13,6 +13,8 @@ Baidu Drive: [https://pan.baidu.com/s/1IV05EpvARn97Mnhj5SmN1A](https://pan.baidu
 
 ### Problem 1. Basic Concepts (9 points)
 Answer the following short-answer questions.
+
+
 (1) Is the seasonal variation of surface air temperature larger in the Northern Hemisphere or Southern Hemisphere? Why?
 
 (2) List five major greenhouse gases.
