@@ -14,13 +14,21 @@ Baidu Drive: [https://pan.baidu.com/s/1IV05EpvARn97Mnhj5SmN1A](https://pan.baidu
 ### Problem 1. Basic Concepts (9 points)
 Answer the following short-answer questions.
 (1) Is the seasonal variation of surface air temperature larger in the Northern Hemisphere or Southern Hemisphere? Why?
+
 (2) List five major greenhouse gases.
+
 (3) Moisture in the atmosphere increases by about 7% per degree of temperature increase. What equation determines this rate?
+
 (4) Where does salinity play a more important role in determining seawater density, tropics or polar region?
-(5) Which jet stream is more zonally symmetric: the Nothern Hemisphere one or the Southern Hemisphere one? Why
+
+(5) Which jet stream is more zonally symmetric: the Nothern Hemisphere one or the Southern Hemisphere one? Why?
+
 (6) Is the extratropical precipitation in the storm tracks related to mean upward motions or transient eddies?
+
 (8) Which cell of the Hadley Circulation is stronger: winter hemisphere one or summer hemisphere one?
+
 (9) Why is the sun's radiation called shortwave radiation and the radiation from the earth's surface and atmosphere called longwave radiation?
+
 
 ### Problem 2.  CO<sub>2</sub> Variability and Temperature (6 points)
 
