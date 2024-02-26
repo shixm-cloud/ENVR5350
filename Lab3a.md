@@ -1,3 +1,4 @@
+<!--
 ## Problem Set 3A. Kinetic Energy
 
 In this exercise, you will compute and compare the kinetic energy in the mean flow, stationary waves, and transient eddies. You will also look at the impact of global warming on the circulation.
@@ -118,5 +119,5 @@ legend('mean flow (1900)', 'stationary wave (1900)', 'transient eddy (1900)', ..
        'mean flow (2100)', 'stationary wave (2100)', 'transient eddy (2100)')
 ylabel('kinetic energy (m^2s^{-2})')
 ```
-
+-->
 

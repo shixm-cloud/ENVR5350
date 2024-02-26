@@ -1,3 +1,4 @@
+<!--
 ## Problem Set 3B. Available Potential Energy
 
 In this exercise, we will look at how available potential energy (APE) responds to global warming by examining simulations using the Community Earth System Model (CESM). 
@@ -115,4 +116,4 @@ xlabel('time (month)')
 legend('1897-1899', '2097-2099')
 xlim([1, 37])
 ```
-
+-->
