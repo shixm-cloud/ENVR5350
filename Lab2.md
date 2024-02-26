@@ -1,3 +1,4 @@
+<!--
 ##  Problem Set 2. Surface Fluxes
 
 In this exercise we will examine the sensible and latent heat flux in a simulation using the Commumunity Earth System Model (CESM)
@@ -144,5 +145,5 @@ hold off
 fprintf('Regression slope: %5.2f W/m^2/K \n\n', b(2))
 ```
 
-
+-->
 
