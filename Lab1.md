@@ -1,6 +1,6 @@
-## Problem Set 1. Carbon Cycle
+## Problem Set 1. Concepts and CO2 Variability
 
-In this assgnment, we will explore simulation data (distributed in class) from the C4MIP. You are requited to look at the following paper to understand the background of the data.
+In this assignment, we will explore simulation data (distributed in class) from the C4MIP. You are required to look at the following paper to understand the background of the data.
 
 * **Reference**: Jones, C. D., Arora, V., Friedlingstein, P., Bopp, L., Brovkin, V., Dunne, J., Graven, H., Hoffman, F., Ilyina, T., John, J. G., Jung, M., Kawamiya, M., Koven, C., Pongratz, J., Raddatz, T., Randerson, J. T., and Zaehle, S.: C4MIP – The Coupled Climate–Carbon Cycle Model Intercomparison Project: experimental protocol for CMIP6, Geosci. Model Dev., 9, 2853-2880, doi:10.5194/gmd-9-2853-2016, 2016.
 
@@ -11,12 +11,22 @@ OneDrive: [https://gohkust-my.sharepoint.com/:u:/g/personal/shixm_ust_hk/ERahStR
 or 
 Baidu Drive: [https://pan.baidu.com/s/1IV05EpvARn97Mnhj5SmN1A](https://pan.baidu.com/s/1IV05EpvARn97Mnhj5SmN1A) (Password: 9rfd)
 
+### Problem 1. Basic Concepts (9 points)
+Answer the following short-answer questions.
+(1) Is the seasonal variation of surface air temperature larger in the Northern Hemisphere or Southern Hemisphere? Why?
+(2) List five major greenhouse gases.
+(3) Moisture in the atmosphere increases by about 7% per degree of temperature increase. What equation determines this rate?
+(4) Where does salinity play a more important role in determining seawater density, tropics or polar region?
+(5) Which jet stream is more zonally symmetric: the Nothern Hemisphere one or the Southern Hemisphere one? Why
+(6) Is the extratropical precipitation in the storm tracks related to mean upward motions or transient eddies?
+(8) Which cell of the Hadley Circulation is stronger: winter hemisphere one or summer hemisphere one?
+(9) Why is the sun's radiation called shortwave radiation and the radiation from the earth's surface and atmosphere called longwave radiation?
 
-### Problem 1 (Warm-Up).  CO<sub>2</sub> Variability and Temperature 
+### Problem 2.  CO<sub>2</sub> Variability and Temperature (6 points)
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
-* _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit lowest concentration of CO<sub>2</sub>?_
-* _The data are from one of the Tier 1 experiments mentioned in Jones et al. 2016, can you tell which one we are analyzing, `1pctCO2-bgc` or `esm-ssp585`?_
+* _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit the lowest concentration of CO<sub>2</sub>?_
+* _The data are from one of the Tier 1 experiments mentioned in Jones et al. 2016. Can you tell which one we are analyzing, `1pctCO2-bgc` or `esm-ssp585`?_
 
 ```
 %% Task 1: CO2 variability and temperature
@@ -35,7 +45,7 @@ co2m = ncread('C4MIP/co2m_Amon_GFDL-ESM4_r1i1p1f1_gr1_000101-010012.nc', 'co2m')
 co2m = reshape(co2m, 288, 180, 1, 1200);   % to make it compatible with code below
 
 %% Q1 of Task 1
-% Now let's work on the first question of Problem 1. We need to get four
+% Now, let's work on the first question of Problem 1. We need to get four
 % lines, each of which should show the distribution of CO2 concentration in 
 % one season as a function of latitude.
 
@@ -46,10 +56,10 @@ co2me = mean(co2m, 1);
 % Winter (DJF) mean
 co2winters = (co2me(1, :, 1, 12:12:end) + ...    % December
               co2me(1, :, 1,  1:12:end) + ...    % January
-              co2me(1, :, 1,  2:12:end)) / 3.0;  % Feburary
+              co2me(1, :, 1,  2:12:end)) / 3.0;  % February
 co2win = squeeze(mean(co2winters, 4));   % average in time
 
-% Spring (March, Aprial, May) mean
+% Spring (March, April, May) mean
 [FILL YOUR OWN CODE HERE, SAVE AS 'co2spr']
 
 % Summer (June, July, August) mean
@@ -117,7 +127,8 @@ saveas(gcf, 'globalMeanTAS.pdf')
 ```
 Now with these plots, you should be able to answer the questions above.
 
-### Problem 2.  Net Primary Productivity 
+<!--
+### Problem 3.  Net Primary Productivity 
 
 In this task, you will explore the relationship between CO<sub>2</sub> concentration and Net Primary Prouductivity (NPP). After the analysis, you should answer the question below:
 * _Does NPP exhibit a linear increasing trend as CO<sub>2</sub> concentration increases? Is its growth faster or slower than a linear function predicts?_
@@ -164,7 +175,7 @@ saveas(gcf, 'NPP_n_CO2_scatter.pdf')
 ```
 Now with the plot, you should be able to answer this part.
 
-### Problem 3.  Carbon Storage
+### Problem 4.  Carbon Storage
 
 In this final task, you are asked to analyze the storage of carbon in vegetation. Follow the instructions in the code below to finish the analysis, and answer the question:
 * _How many times of vegetation mass do we need to plant (instead of relying on natural growth) by the end of this simulation in order to have the same fraction of carbon stored in vegetation as at the beginning?_
@@ -210,3 +221,4 @@ xlabel('time (year)')
 ylabel('carbon mass in atmosphere (kg m^{-2})')
 saveas(gcf, 'cVeg_time_series.pdf')
 ```
+-->
