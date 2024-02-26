@@ -4,13 +4,15 @@ This website hosts the coding assignments of the course Introduction to Climate 
 
 Sample code on this website is written in MATLAB. However, you are welcome to use other languages, such as Python or Julia, to finish your homework assignments. 
 
-### 1. [Carbon Cycle](Lab1.md)
+### 1. [Concepts and CO<sub>2<sub> Variability](Lab1.md)
 
+<!--
 ### 2. [Surface Fluxes](Lab2.md)
 
 ### 3A. [Kinetic Energy](Lab3a.md)
 
 ### 3B. [Available Potential Energy](Lab3b.md)
+-->
 
 ### * [MATLAB for Starters](MATLAB_Starter.md)
 
