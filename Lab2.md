@@ -85,7 +85,11 @@ xlabel('year')
 ylabel('flux (W m^{-2})')
 legend('sensible', 'latent', 'Location', 'east')
 ```
+### Problem 3. Understanding the Change
+{% include mathjax.html %}
 
+
+<!--
 ### Problem 3. Understanding the Change
 {% include mathjax.html %}
 
@@ -143,5 +147,5 @@ hold off
 
 fprintf('Regression slope: %5.2f W/m^2/K \n\n', b(2))
 ```
-
+-->
 
