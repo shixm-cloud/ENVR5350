@@ -1,8 +1,8 @@
-##  Problem Set 2. Surface Fluxes
+##  Problem Set 2. Equations and Surface Fluxes
 
 In this exercise we will examine the sensible and latent heat flux in a simulation using the Commumunity Earth System Model (CESM)
 
-### Problem 1. Geographic Variation of Fluxes
+### Problem 1. Geographic Variation of Fluxes (5 points)
 
 Please complete the code below and answer the questions below.
 * _Over Australia, is the mean sensible flux stronger or the mean latent heat flux? On an annual mean and spatial basis, do you think the Bowen ratio over Australia is greater or smaller than 1?_
@@ -58,7 +58,7 @@ load coastlines
 plotm(coastlat,coastlon)
 ```
 
-### Problem 2. Trend in Fluxes
+### Problem 2. Trend in Fluxes (5 points)
 
 In this part, please complete the code to calculate the monthly global-mean surface sensible and latent heat fluxes, and plot the time series to show how they are predicted to change under SSP5-8.5 (shared socio-economic pathway) scenario. Answer this question
 * _According to this CESM simulation, do you think the globally averaged sensible heat flux and latent heat flux will increase or decrease due to global warming? Which one changes faster?_
@@ -85,7 +85,7 @@ xlabel('year')
 ylabel('flux (W m^{-2})')
 legend('sensible', 'latent', 'Location', 'east')
 ```
-### Problem 3. Understanding the Change
+### Problem 3. Understanding the Change (5 points)
 {% include mathjax.html %}
 
 Please derive the thermodynamic equation using potential temperature (below) with the first law of thermodynamics.
