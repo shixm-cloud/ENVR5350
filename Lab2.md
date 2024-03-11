@@ -88,6 +88,11 @@ legend('sensible', 'latent', 'Location', 'east')
 ### Problem 3. Understanding the Change
 {% include mathjax.html %}
 
+Please derive the thermodynamic equation using potential temperature (below) with the first law of thermodynamics.
+\\[
+c_p\frac{D\theta}{Dt} = \frac{\theta}{T}\dot{Q}
+\\]
+
 
 <!--
 ### Problem 3. Understanding the Change
