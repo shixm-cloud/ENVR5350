@@ -6,7 +6,7 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 
 ### 1. [Concepts and CO<sub>2</sub> Variability](Lab1.md)
 
-### 2. [Surface Fluxes](Lab2.md)
+### 2. [Equations and Surface Fluxes](Lab2.md)
 
 <!--
 ### 3A. [Kinetic Energy](Lab3a.md)
