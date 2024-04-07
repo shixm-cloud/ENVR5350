@@ -4,7 +4,7 @@ In this exercise, you will compute and compare the kinetic energy in the mean fl
 
 The dataset provided is daily data of zonal wind (`ua`) and meridional wind (`va`) in the simulation of 1900 and 2100 (under SSP5) climate by the GFDL climate model. They are downloaded from the CMIP6 website. For your reference, the change in global mean surface temperature is **3.8** K from 1900 to 2100.
 
-### Coding Problem 1. Zonal Mean, Time Mean Zonal Wind
+### Coding Problem 1. Zonal Mean, Time Mean Zonal Wind (4 points)
 
 Finish the code below and compare the plots of zonally averaged, time mean zonal wind field for 1900 and 2100. You should plot the mean zonal wind in a latitude-height(pressure) coordinate. Answer the following questions:
 * At what pressure level do you see the _tropospheric_ jet streams?
@@ -65,7 +65,7 @@ ylabel('pressure (hPa)')
 title('Year 2100')
 ```
 
-### Coding Problem 2. Kinetic Energy
+### Coding Problem 2. Kinetic Energy (4 points)
 
 In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer these questions:
 * What component of the circulation (mean flow, stationary waves, or transient eddies) exhibit largest change? At what latitudes? 
