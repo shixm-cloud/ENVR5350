@@ -1,11 +1,10 @@
-<!--
-## Problem Set 3A. Kinetic Energy
+## Problem Set 3. Momentum and Kinetic Energy
 
-In this exercise, you will compute and compare the kinetic energy in the mean flow, stationary waves, and transient eddies. You will also look at the impact of global warming on the circulation.
+In this exercise, you will compute and compare the kinetic energy in the mean flow, stationary waves, and transient eddies. You will also look at the impact of global warming on the circulation. There are also some short questions for basic concepts.
 
-The dataset provided are daily data of zonal wind (`ua`) and meridional wind (`va`) in the simulation of 1900 and 2100 (under SSP5) climate by the GFDL climate model. They are downloaded from CMIP6 website. For your reference, the change in global mean surface temperature is **3.8** K from 1900 to 2100.
+The dataset provided is daily data of zonal wind (`ua`) and meridional wind (`va`) in the simulation of 1900 and 2100 (under SSP5) climate by the GFDL climate model. They are downloaded from the CMIP6 website. For your reference, the change in global mean surface temperature is **3.8** K from 1900 to 2100.
 
-### Problem 1. Zonal Mean, Time Mean Zonal Wind
+### Coding Problem 1. Zonal Mean, Time Mean Zonal Wind
 
 Finish the code below and compare the plots of zonally averaged, time mean zonal wind field for 1900 and 2100. You should plot the mean zonal wind in a latitude-height(pressure) coordinate. Answer the following questions:
 * At what pressure level do you see the _tropospheric_ jet streams?
@@ -66,7 +65,7 @@ ylabel('pressure (hPa)')
 title('Year 2100')
 ```
 
-### Problem 2. Kinetic Energy
+### Coding Problem 2. Kinetic Energy
 
 In this part, you need to complete the code below to compute the kinetic energy contained in the (zonal and time) mean flow, stationary waves, and transient eddies. Plot the latitudinal distribution of kinetic energy for 250 hPa and 500 hPa. Answer these questions:
 * What component of the circulation (mean flow, stationary waves, or transient eddies) exhibit largest change? At what latitudes? 
@@ -119,5 +118,20 @@ legend('mean flow (1900)', 'stationary wave (1900)', 'transient eddy (1900)', ..
        'mean flow (2100)', 'stationary wave (2100)', 'transient eddy (2100)')
 ylabel('kinetic energy (m^2s^{-2})')
 ```
--->
+
+### Concepts Questions (6 points)
+
+1) Is the length of a day inversely proportional to the total angular momentum or total kinetic energy of the atmosphere?
+
+2) There is a north-south-oriented mountain range (like the Rockies), and on average, the western slope has higher surface pressure than the eastern slope. Does the atmosphere lose or gain angular momentum due to such a pressure difference?
+
+3) Does the atmosphere gain or lose momentum from/to the earth in the deep tropics? What is the situation in the extratropics?
+
+4) What is the average energy flow in the atmosphere: available potential energy to kinetic energy or the other way around?
+
+5) What process generates available potential energy in the atmosphere: latent heat release, radiation, or both?
+
+6) Is the Brewer-Dobson circulation a thermally direct or indirect circulation? Why?
+
+   
 
