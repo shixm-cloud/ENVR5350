@@ -118,10 +118,10 @@ xlim([1, 37])
 ### Basic Concept Quetions
 
 (1) Is the cloud in the picture below due to convective instability or Kelvin-Helmholtz instability?
-(Cloud.jpg)
+![cloud](Cloud.jpg)
 
 (2) The four rows below represent different configurations of two-dimensional flows. Which one cannot have barotropic instability according to Reyleigh's criterion? 
-(jet.png)
+![jet](jet.png)
 
 (3) Can a two-dimensional flow have baroclinic instability? Why or why not?
 
