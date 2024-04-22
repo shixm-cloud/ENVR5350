@@ -1,13 +1,12 @@
-<!--
-## Problem Set 3B. Available Potential Energy
+## Problem Set 4. Available Potential Energy and Instability
 
 In this exercise, we will look at how available potential energy (APE) responds to global warming by examining simulations using the Community Earth System Model (CESM). 
 
-### Problem 1. Mean Lapse Rate
+### Problem 1. Mean Lapse Rate (5 points)
 
-Two Southern Hemisphere temperature datasets are provided. One is `historical` simulation for 1897 to 1899, and the other is the simulation of 2097-2099 under the SSP5-8.5 scenario. Please complete the code below and answer the following question,
+Two Southern Hemisphere temperature datasets are provided. One is a `historical` simulation for 1897 to 1899, and the other is the simulation of 2097-2099 under the SSP5-8.5 scenario. Please complete the code below and answer the following question,
 * _Do you think the mean lapse rate for the warmed climate and the current climate are significantly different? How large error (in terms of percentage) may be introduced by using the mean lapse rate profile for 1897-1899 in estimating the APE of 2097-2099?_
-\[Hint: you can certainly do detailed calculation to find out the error. However, here I wish you to estimate the relative error by comparing the two lapse rate profile and using the definition of APE (Equation 18 on class slides) \]
+\[Hint: you can certainly do detailed calculations to find out the error. However, here I wish you to estimate the relative error by comparing the two lapse rate profile and using the definition of APE (Equation 18 on class slides) \]
 
 ```
 %% Southern Hemisphere Available Potential Energy
@@ -48,7 +47,7 @@ xlabel('lapse rate (K/km)')
 ylabel('height (km)')
 legend('1897-1899', '2097-2099')
 % We can use the lowest 4 (half) levels only, because the 5th is already
-% above troupopause.
+% above tropopause.
 
 % Estimate overestimation/underestimation that may be introduce by using the mean lapse
 % rate of one climate for both.
@@ -57,7 +56,7 @@ legend('1897-1899', '2097-2099')
 fprintf('If we use the historical climate profile, error in APE is: %5.1f %%\n', err)
 ```
 
-### Problem 2. The Change in APE
+### Problem 2. The Change in APE (5 points)
 
 Complete the code below to plot time series of APE in the historical period and future period. Answer the following questions.
 * _Which seasons have the lowest and highest APE?_
@@ -115,5 +114,18 @@ ylabel('APE (J m^{-2})')
 xlabel('time (month)')
 legend('1897-1899', '2097-2099')
 xlim([1, 37])
-```
--->
+
+### Basic Concept Quetions
+
+(1) Is the cloud in the picture below due to convective instability or Kelvin-Helmholtz instability?
+[Cloud.jpg]
+
+(2) The four rows below represent different configurations of two-dimensional flows. Which one cannot have barotropic instability according to Reyleigh's criterion? 
+[jet.png]
+
+(3) Can a two-dimensional flow have baroclinic instability? Why or why not?
+
+(4) Is the deformation radius larger in the atmosphere or the ocean? Why?
+
+(5) In the Eady's problem, the cutoff wavelength is 2.6L<sub>d</sub>. If the deformation radius is 1000km, can the waves with a wavelength around 800km be unstable due to baroclinic instability? Why?
+
