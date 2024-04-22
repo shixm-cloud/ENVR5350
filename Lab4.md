@@ -116,7 +116,7 @@ legend('1897-1899', '2097-2099')
 xlim([1, 37])
 ```
 
-### Basic Concept Quetions
+### Basic Concept Questions (5 points)
 
 (1) Is the cloud in the picture below due to convective instability or Kelvin-Helmholtz instability?
 ![cloud](Cloud.jpg)
