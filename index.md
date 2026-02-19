@@ -6,6 +6,7 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 
 ### 1. [Concepts and CO<sub>2</sub> Variability](Lab1.md)
 
+<!--
 ### 2. [Equations and Surface Fluxes](Lab2.md)
 
 ### 3. [Momentum and Kinetic Energy](Lab3.md)
@@ -13,4 +14,4 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 ### 4. [Available Potential Energy and Instability](Lab4.md)
 
 ### * [MATLAB for Starters](MATLAB_Starter.md)
-
+-->
