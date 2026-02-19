@@ -32,7 +32,7 @@ Answer the following short-answer questions.
 (9) Why is the sun's radiation called shortwave radiation and the radiation from the earth's surface and atmosphere called longwave radiation?
 
 
-### Problem 2.  CO<sub>2</sub> Variability and Temperature (6 points)
+### Problem 2.  CO<sub>2</sub> Variability and Temperature (4 points)
 
 First, let's explore the spatial and temporal variability of the data of CO<sub>2</sub> concentration. You need to answer the following questions after your analysis.
 * _In each of four seasons (DJF, MAM, JJA, SON), what latitudes exhibit the lowest concentration of CO<sub>2</sub>?_
@@ -137,8 +137,7 @@ saveas(gcf, 'globalMeanTAS.pdf')
 ```
 Now with these plots, you should be able to answer the questions above.
 
-<!--
-### Problem 3.  Net Primary Productivity 
+### Problem 3.  Net Primary Productivity (2 points)
 
 In this task, you will explore the relationship between CO<sub>2</sub> concentration and Net Primary Prouductivity (NPP). After the analysis, you should answer the question below:
 * _Does NPP exhibit a linear increasing trend as CO<sub>2</sub> concentration increases? Is its growth faster or slower than a linear function predicts?_
@@ -185,6 +184,7 @@ saveas(gcf, 'NPP_n_CO2_scatter.pdf')
 ```
 Now with the plot, you should be able to answer this part.
 
+<!--
 ### Problem 4.  Carbon Storage
 
 In this final task, you are asked to analyze the storage of carbon in vegetation. Follow the instructions in the code below to finish the analysis, and answer the question:
