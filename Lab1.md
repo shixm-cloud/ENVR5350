@@ -27,7 +27,7 @@ Answer the following short-answer questions.
 
 (6) Is the extratropical precipitation in the storm tracks related to mean upward motions or transient eddies?
 
-(7) The net effect of radiation on the global atmosphere is a cooling. Which of the following is the primary process balance the radiative cooling: sensible heating or latent heating?
+(7) The net effect of radiation on the global atmosphere is a cooling. Which of the following is the primary process that balances the radiative cooling: sensible heating or latent heating?
 
 (8) Which cell of the Hadley Circulation is stronger: winter hemisphere one or summer hemisphere one?
 
