@@ -85,7 +85,7 @@ xlabel('year')
 ylabel('flux (W m^{-2})')
 legend('sensible', 'latent', 'Location', 'east')
 ```
-### Problem 3. Understanding the Change (5 points)
+### Problem 3. Thermodynamic Equation (5 points)
 {% include mathjax.html %}
 
 Please derive the thermodynamic equation using potential temperature (below) with the first law of thermodynamics.
