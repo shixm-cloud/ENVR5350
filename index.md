@@ -11,4 +11,3 @@ Sample code on this website is written in MATLAB. However, you are welcome to us
 ### 3. [Momentum and Kinetic Energy](Lab3.md)
 
 ### 4. [Available Potential Energy and Instability](Lab4.md)
-
