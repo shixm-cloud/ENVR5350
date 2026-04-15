@@ -121,7 +121,7 @@ ylabel('kinetic energy (m^2s^{-2})')
 
 ### Concepts Questions (6 points)
 
-1) Is the length of a day inversely proportional to the total angular momentum or total kinetic energy of the atmosphere?
+1) Is the length of a day proportional to the total angular momentum or total kinetic energy of the atmosphere?
 
 2) There is a north-south-oriented mountain range (like the Rockies), and on average, the western slope has higher surface pressure than the eastern slope. Does the atmosphere lose or gain angular momentum due to such a pressure difference?
 
